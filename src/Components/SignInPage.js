@@ -26,7 +26,7 @@ function SignInPage() {
             } else {
                 const result = await data.json();
                 localStorage.setItem('token', result.token);
-                navigate("/inbox");
+                navigate("/welcome");
             }
         }
     });
